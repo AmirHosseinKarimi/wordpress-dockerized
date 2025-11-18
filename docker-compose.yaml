@@ -1,7 +1,6 @@
 services:
   wordpress:
-    build:
-      dockerfile: Dockerfile
+    build: .
     volumes:
       - "./wordpress-files:/var/www/html"
     environment:
