@@ -9,8 +9,6 @@ services:
       - WORDPRESS_DB_USER=$SERVICE_DB_USER_WORDPRESS
       - WORDPRESS_DB_PASSWORD=$SERVICE_DB_PASSWORD_WORDPRESS
       - WORDPRESS_DB_NAME=$SERVICE_DB_NAME_WORDPRESS
-    depends_on:
-      - mariadb
     healthcheck:
       test:
         - CMD
