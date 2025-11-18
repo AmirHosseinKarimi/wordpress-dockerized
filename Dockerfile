@@ -29,6 +29,3 @@ RUN echo 'if [ -f /etc/bash_completion ]; then' >> /var/www/.bashrc && \
   echo '  . /etc/bash_completion' >> /var/www/.bashrc && \
   echo 'fi' >> /var/www/.bashrc && \
   chown www-data:www-data /var/www/.bashrc
-
-# Set default user to www-data
-USER www-data
