@@ -1,5 +1,8 @@
 FROM wordpress:php8.4-apache
 
+# PHP configuration
+COPY custom.ini $PHP_INI_DIR/conf.d/
+
 # Install required packages
 RUN apt-get update && apt-get install -y \
   curl \
