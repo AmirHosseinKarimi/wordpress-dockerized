@@ -1,6 +1,6 @@
 services:
   wordpress:
-    build: .
+    image: ghcr.io/amirhosseinkarimi/wordpress-dockerized:latest
     volumes:
       - "./wordpress-files:/var/www/html"
     environment:
