@@ -6,6 +6,9 @@ on:
       - main
     tags:
       - "v*"
+    paths:
+      - "**/Dockerfile"
+      - ".github/workflows/build.yml"
   pull_request:
     branches:
       - main
